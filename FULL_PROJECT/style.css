@@ -1,0 +1,172 @@
+body {
+    background-color: #2A0B11 !important;
+    background-image: url("photo_2023-11-04_16-34-11.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.d-flex {
+    margin-top: 20px;
+}
+.navbar {
+    font-family: 'Oswald';
+    font-size: 20px;
+    margin-left: -115px;
+}
+.album{
+    background-image: url("Back.png");
+    background-repeat: no-repeat;
+}
+.navbar-container {
+    border: 5px solid #F2A74C;
+    border-radius: 20px; 
+    
+}
+.cart {
+    border: 4px solid #F2A74C;
+    border-radius: 20px; 
+    padding: 10px;
+    attachment: fixed;
+}
+
+
+.suret{
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    text-align: center;
+    
+}
+
+.nav-1 a {
+    color: #ffffff;
+    text-decoration: none; 
+    padding: 20px;
+    font-family: 'Texturina';
+    font-size: 25px;
+}
+
+.card {
+    background-color: transparent !important;
+    font-family: 'Lime Light',;
+    color: white !important;
+    border: 3px solid #F2A74C !important;
+    border-radius: 50px !important;
+}
+
+.card1 {
+    border: none;
+    border-radius: 46px 46px 0 0 !important;
+}
+
+.card-text {
+    height: 80px; 
+    text-align: left;
+  }
+
+.footer{
+    justify-content: center !important;
+    font-family: 'Texturina';
+    font-size: 29px;
+    color: white !important;
+    
+}
+.cart-button {
+    background-image: url("cart.png");
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-color: transparent !important; 
+    border: none !important; 
+    width: 30px; 
+    height: 30px;
+    
+}
+
+
+
+
+
+.offcanvas-header{
+   
+    background-color:#4c141f
+}
+.teat{
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+}
+.offcanvas{
+    font-size: larger;
+    background-color: hwb(0 100% 0%) !important ;
+}
+.footer .jer{
+    font-size: 19px;
+} 
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+.bi {
+    font-size: 50px;
+    color: #F2A74C;
+    padding: 10px;
+}
+.bif {
+    font-size: 30px;
+    color: #F2A74C;
+}
+.footer-contact {
+    color: white !important;
+    border: 3px solid #F2A74C !important;
+    border-radius: 20px !important;
+    width: 160px;
+}
+
+
+
+.xaxa1{
+    display: flex; 
+    align-items: center;
+}
+.f-logo {
+    width: 200px;
+    height: auto;
+    margin-top: -20px;
+}
+footer{
+text-align: center;
+
+}
+.f-n, .f-h {
+    padding: 20px;
+}
+
+
+
+
+  .card {
+    transition: 0.4s;
+   }
+   .card:hover {
+    transform: scale(1.04); 
+    border: 6px solid #f2a74cb4 !important;
+   }
+   .maps{
+    transition: 0.4s;
+    
+   }
+   .maps:hover {
+    transform: scale(1.04); 
+
+   }
+   .clock{
+    transition: 0.4s;
+    
+   }
+   .clock:hover {
+    transform: scale(1.04); 
+
+   }
+
+

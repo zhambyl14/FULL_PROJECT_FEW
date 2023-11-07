@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>JF Menu</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+    <div class="site" id="001">
+        <header class="text-white main-header">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="lo.png" alt="Logo" width="170" height="120">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-container">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="text-white nav-link text-decoration-none mx-2" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="text-white nav-link text-decoration-none mx-2" href="#">About us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="text-white nav-link text-decoration-none mx-2" href="#001">Menu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="text-white nav-link text-decoration-none mx-2" href="#">Program</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="cart">
+                        <button onclick="func()" class="btn btn-primary cart-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <div class="teat"><h5 id="offcanvasRightLabel">Shopping Cart</h5></div>
+                                </div>
+                                <div class="card2" style="width:18rem;">
+                                  <img src="1.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                </div>
+                                <ul id="cart-items">
+                                    <li id="order1">
+                                        Ваш заказ: 0$
+                                        
+                                    </li>
+                                    <li id="order2">
+                                        Ваш заказ: 0$
+                                        
+                                    </li>
+                                </ul>
+                                  </div>
+                            </div>
+                        </button>
+                        
+                    </div>
+                    
+                    
+                      
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="main">
+                <div class="main-suret">
+                    <div class="suret ">
+                        <img src="Ресурс 3 1.png" alt="menu">
+                    </div>
+                </div>
+                <br><br>
+                <div class="main-nav" id="0">
+                    <div class="nav-1">
+                        <a href="#0">All</a>
+                        <a href="#1">Fast Food</a>
+                        <a href="#2">Meal</a>
+                        <a href="#3">Desserts</a>
+                        <a href="#4">Hote drinks</a>
+                        <a href="#5">Drinks</a>
+
+                    </div>
+                </div>
+                <div class="album py-5  bg-transparent">
+                    <div class="container ">
+              
+                      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col bg-transparent" id="1">
+                            <div class="card shadow-sm">
+                                <img src="1.png" alt="1" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title">New-York Burger</h5>
+                                    <p class="card-text">Composition: cheese, meat, tomato, cabbage</p>
+                                
+                                    <h2 class="card-price" id="burger-price">6</h2>
+                                    <span>Quantity:</span>
+                                    <button class="btn btn-primary" id="decrease-quantity">-</button>
+                                    <span id="quantity1">1</span>
+                                    <button class="btn btn-primary" id="increase-quantity">+</button>
+                                    <button onclick="func1Cart()" class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col bg-transparent">
+                            <div class="card shadow-sm ">
+                                <img src="2.jpg" alt="2" class="card1" id="p2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pizza Mafiozy</h5>
+                                    <p class="card-text">Composition: Chicken ham, cheddar and parmesan cheeses, tomatoes, red onion, mozzarella, alfredo sauce, garlic and Italian herbs.</p>
+                                    <h5 class="card-price2">Price: 5$</h5>
+                                    <span>Quantity:</span>
+                                    <button onclick="func2Minus()" class="btn btn-primary" id="decrease-quantity2">-</button>
+                                    <span id="quantity2">1</span>
+                                    <button onclick="func2Plus()" class="btn btn-primary" id="increase-quantity2">+</button>
+                                    <button onclick="func2Cart()" class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col bg-transparent">
+                            <div class="card shadow-sm">
+                                <img src="3.jpg" alt="3" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Beef Ciabatta Sandwich</h5>
+                                    <p class="card-text">Composition: Cottage cheese, iceberg, cucumbers, salmon, red onion, lemon sauce, eggs. </p>
+                                    <h5 class="card-price">Price: $</h5>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col bg-transparent" id="2">
+                            <div class="card shadow-sm">
+                                <img src="5.jpg" alt="4" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Himalaya</h5>
+                                    <p class="card-text">Composition: Arugula, tomato, onion, pine nuts, beetroot</p>
+                                    <h5 class="card-price">Price: $</h5>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col bg-transparent">
+                            <div class="card shadow-sm">
+                                <img src="4.jpg" alt="5" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Wagyu steak</h5>
+                                    <p class="card-text">Composition: Wagyu beef fillet.</p>
+                                    <h5 class="card-price">Price: $</h5>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col bg-transparent">
+                            <div class="card shadow-sm">
+                                <img src="6.jpg" alt="6" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Pasta bolognese</h5>
+                                    <p class="card-text">Composition: Boiled Linguine Pasta, Tomatoes in Their Own Juice, Onion, Celery, Cheese, Napoli Sauce, Universal Seasoning, Basil, Black Pepper, and Oregano. </p>
+                                    <h5 class="card-price">Price: $</h5>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col bg-transparent" id="3">
+                            <div class="card shadow-sm">
+                                <img src="7.jpg" alt="7" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Espresso</h5>
+                                    <p class="card-text">Composition: Arabica, robusta</p>
+                                    <h5 class="card-price">Price: $</h5>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col bg-transparent">
+                            <div class="card shadow-sm">
+                                <img src="8.jpg" alt="8" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cappuccino</h5>
+                                    <p class="card-text">Composition: Arabica, robusta, milk foam.</p>
+                                    <h5 class="card-price">Price: $</h5>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col bg-transparent">
+                            <div class="card shadow-sm">
+                                <img src="7.jpg" alt="9" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Name: </h5>
+                                    <p class="card-text">Composition: </p>
+                                    <h5 class="card-price">Price: $</h5>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col bg-transparent" id="4">
+                            <div class="card shadow-sm">
+                                <img src="10.jpg" alt="10" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rasperberry Pie </h5>
+                                    <p class="card-text">Composition: Raspberries, Granulated Sugar, Cornstarch, Lemon Juice, Pastry Crust, and Egg Wash.</p>
+                                    <h5 class="card-price">Price: $</h5>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col bg-transparent">
+                            <div class="card shadow-sm">
+                                <img src="9.jpg" alt="11" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Caramel Ice-Cream</h5>
+                                    <p class="card-text">Composition: Composition: Cream, Milk, Sugar, Caramel Sauce.</p>
+                                    <h5 class="card-price">Price: $</h5>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col bg-transparent">
+                            <div class="card shadow-sm">
+                                <img src="11.jpg" alt="12" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chocolate ice cream</h5>
+                                    <p class="card-text">Composition: Milk, Cream, Sugar, Cocoa Powder, Chocolate Chips, Egg Yolks, Vanilla Extract, and Stabilizers.</p>
+                                    <h5 class="card-price">Price: $</h5>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col bg-transparent">
+                            <div class="card shadow-sm">
+                                <img src="12.jpg" alt="13" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Strong Citrus Cocktail</h5>
+                                    <p class="card-text">Composition: Citrus Vodka, Fresh Citrus Juice, Triple Sec, Ice. </p>
+                                    <h5 class="card-price">Price: $</h5>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col bg-transparent" id="5">
+                            <div class="card shadow-sm">
+                                <img src="13.jpg" alt="14" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Sunset Cocktail </h5>
+                                    <p class="card-text">Composition: Tequila, Grenadine Syrup, Orange Juice, Pineapple Juice, Ice.</p>
+                                    <h5 class="card-price">Price: $</h5>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col bg-transparent">
+                            <div class="card shadow-sm">
+                                <img src="14.jpg" alt="15" class="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Cherry Bomb Cocktail</h5>
+                                    <p class="card-text">Composition: Cherry Brandy, Amaretto, Cola, Ice.</p>
+                                    <h5 class="card-price">Price: $</h5>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="oboi">
+                    <div class="oboi-suret">
+                        <img src="00.png" alt="Photo">
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <br>
+        <footer>
+            <div class="footer row">
+                
+
+                <div class="col-md-2">
+                    <div class="jer">
+                        <div class="jer-1">
+                            <a href="https://go.2gis.com/hssm9">
+                            <div class="maps">
+                               <i class="bif bi-pin-map"></i>
+                            <p>Astana, Mangilik El, C2</p>
+                            </div></a>
+                            <div class="clock">
+                                <i class="bif bi-clock-history"></i>
+                            <p>12:00 - 02:00</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+        
+                <div class=" col-md-2">
+                    <div class="footer-navbar">
+                        <div class="f-n">
+                            <div class="d-home">
+                                <a href="#">Home</a>
+                            </div>
+                            <div class="d-home">
+                                <a href="#">About us</a>
+                            </div>
+                            <div class="d-home">
+                                <a href="#0">Menu</a>
+                            </div>
+                            <div class="d-home">
+                                <a href="#">Program</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class=" col-md-2">
+                    <div class="footer-logo">
+                        <div class="f-l">
+                            <img src="footer_logo.png" alt="Logo" class="f-logo">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class=" col-md-2">
+                    <div class="footer-help">
+                        <div class="f-h">
+                            <div class="d-buy">
+                                <a href="#">Vacancy</a>
+                            </div>
+                            <div class="d-buy">
+                                <a href="#">Buy tickets</a>
+                            </div>
+                            <div class="d-buy">
+                                <a href="#">Events</a>
+                            </div>
+                            <div class="d-buy">
+                                <a href="#">Help</a>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-2">
+                    <div class="footer-contact">
+                        <div class="f-c">
+                            <div class="cardf">
+                                <div class="card-body">
+                                    <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+                                    <a href="tel:+77474005347"><i class="bi bi-telephone"></i>
+                                 </div>
+                            </div>
+                            <div class="cardf">
+                                <div class="card-body">
+                                    <a href="mailto:aergvae@bk.ru"><i class="bi bi-envelope"></i></a>
+                                    <a href="https://www.instagram.com/ba1kar/?igshid=YzAwZjE1ZTI0Zg%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <div class="corner-buttons"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
